@@ -1,0 +1,9 @@
+export DT_API_URL=https://izs31363.dev.dynatracelabs.com
+export DT_API_TOKEN=dt0c01.XXXXX
+export AWS_EVENTBRIDGE_BUS=default
+export AWS_EVENTBRIDGE_RULE_PATTERN=X-aws.health
+
+export TEST_DUMP_PATH=/tmp
+export TEST_AWS_REGION=us-east-1
+export TEST_AWS_ACCOUNT=XXXXX
+export TEST1_AWS_EC2_INSTANCE=i-XXXXX

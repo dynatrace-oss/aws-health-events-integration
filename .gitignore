@@ -1,0 +1,4 @@
+.DS_Store
+envs/priv*
+node_modules
+package-lock.json

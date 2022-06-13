@@ -1,0 +1,5 @@
+dtAPIUrl=https://XXXXX.dev.dynatracelabs.com
+dtAPIToken=dt0c01.XXXXX
+awsEventBridgeBus=XXXXX
+awsEventBridgeRulePattern=X-aws.health
+

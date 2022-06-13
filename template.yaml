@@ -1,0 +1,60 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  awshealth2dynatrace
+
+  Forward account specific AWS Health Events published on EventBridge directly to Dynatrace where events are linked up with the Dynatrace topology
+  
+# More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
+Globals:
+  Function:
+    Timeout: 3
+
+Parameters:
+  dtAPIUrl:
+    Type: String
+  dtAPIToken:
+      Type: String
+  awsEventBridgeBus:
+    Type: String
+  awsEventBridgeRulePattern:
+    Type: String
+
+Resources:
+  DTAPITokenSecret:
+    Type: AWS::SecretsManager::Secret
+    Properties:
+      Name: awshealth2dynatrace/awsHealthEvent2DTEventFunction/DTApiToken
+      SecretString: !Sub
+        - '{"dtAPIToken":"${dtAPIToken}"}'
+        - dtAPIToken: !Ref dtAPIToken
+
+  AWSHealthEvent2DTEventFunction:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      PackageType: Zip
+      CodeUri: ./awshealth2dynatrace/awsHealthEvent2DTEventFunction
+      Handler: index.handler
+      Runtime: nodejs14.x
+      Architectures:
+        - x86_64
+      Environment:
+        Variables:
+          AWS_SECRET_ID: awshealth2dynatrace/awsHealthEvent2DTEventFunction/DTApiToken
+          AWS_SECRET_REGION: !Ref 'AWS::Region'
+          DT_API_URL: !Ref dtAPIUrl
+      Policies:
+      - Statement:
+        - Sid: readDTAPITokenFromSecretsManager
+          Effect: Allow
+          Action:
+          - secretsmanager:GetSecretValue
+          Resource: !Ref DTAPITokenSecret
+      Events:
+        AWSHealthEvents:
+          Type: EventBridgeRule # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
+          Properties:
+            Pattern:
+              source: 
+                - !Ref awsEventBridgeRulePattern
+            EventBusName: !Ref awsEventBridgeBus

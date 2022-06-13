@@ -1,0 +1,23 @@
+{
+    "version": "0",
+    "id": "163f2fe3-e6e3-5952-daa6-ca2dce3d3169",
+    "detail-type": "AWS Health Event",
+    "source": "X-aws.health",
+    "account": "{{account}}",
+    "time": "2022-04-04T09:00:00Z",
+    "region": "{{region}}",
+    "resources": [],
+    "detail": {
+      "eventArn": "arn:aws:health:ap-southeast-2::event/AWS_ELASTICLOADBALANCING_API_ISSUE_90353408594353980",
+      "service": "ELASTICLOADBALANCING",
+      "eventTypeCode": "AWS_ELASTICLOADBALANCING_API_ISSUE",
+      "eventTypeCategory": "issue",
+      "startTime": "{{startTime}}",
+      "eventDescription": [
+        {
+          "language": "en_US",
+          "latestDescription": "A description of the event will be provided here"
+        }
+      ]
+    }
+  }

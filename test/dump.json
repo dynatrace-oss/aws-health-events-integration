@@ -1,0 +1,409 @@
+[{
+  "account": "478983378254",
+  "detail": {
+    "affectedEntities": [
+      {
+        "entityValue": "vpn-0171313c6944e5983"
+      }
+    ],
+    "eventArn": "arn:aws:health:us-east-1::event/VPN/AWS_VPN_SINGLE_TUNNEL_NOTIFICATION/AWS_VPN_SINGLE_TUNNEL_NOTIFICATION-478983378254-us-east-1-2022-M05",
+    "eventDescription": [
+      {
+        "language": "en_US",
+        "latestDescription": "You're receiving this message because you have at least one VPN Connection in the us-east-1 Region, for which your VPN Customer Gateway is not using both tunnels. This mode of operation is not recommended as you may experience connectivity issues if your active tunnel fails.\\n\\nThe VPN Connection(s) which do not currently have both tunnels established are:\\n\\nvpn-0171313c6944e5983\\n\\n\\nYou can obtain the VPN Connection configuration recommendations for several types of VPN devices from the AWS Management Console (1). On the \\\"Amazon VPC\\\" tab, select \\\"VPN Connections\\\". Then highlight the VPN Connection and choose \\\"Download Configuration\\\".\\n\\nFor Static VPNs, enabling both tunnels may lead to asymmetric routing, which will need to be permitted by your Customer Gateway Device. For configuration options, please refer to your vendor specific documentation.\\n\\nThis notice will be sent regularly until both tunnels are established. For assistance in establishing your second tunnel, or to opt-out of these notifications, please contact AWS Premium Support (2).\\n\\n(1) https://console.aws.amazon.com\\n(2) https://aws.amazon.com/support"
+      }
+    ],
+    "eventTypeCategory": "accountNotification",
+    "eventTypeCode": "AWS_VPN_SINGLE_TUNNEL_NOTIFICATION",
+    "service": "VPN",
+    "startTime": "Sat, 28 May 2022 01:42:42 GMT"
+  },
+  "detail-type": "AWS Health Event",
+  "id": "2ad9d61b-b9b8-afa1-554e-7f93e506e058",
+  "region": "us-east-1",
+  "replay-name": "replay1",
+  "resources": [
+    "vpn-0171313c6944e5983"
+  ],
+  "source": "aws.health",
+  "time": "2022-05-28T01:42:42Z",
+  "version": "0"
+},
+{
+  "account": "478983378254",
+  "detail": {
+    "affectedEntities": [
+      {
+        "entityValue": "i-073e34cc1e957d7ec"
+      }
+    ],
+    "endTime": "Mon, 13 Jun 2022 06:00:00 GMT",
+    "eventArn": "arn:aws:health:us-east-1::event/EC2/AWS_EC2_INSTANCE_REBOOT_FLEXIBLE_MAINTENANCE_SCHEDULED/AWS_EC2_INSTANCE_REBOOT_FLEXIBLE_MAINTENANCE_SCHEDULED_ee0ac570-bca3-4b2c-b1b7-0548586a6a5c",
+    "eventDescription": [
+      {
+        "language": "en_US",
+        "latestDescription": "One or more of your Amazon EC2 instances are scheduled for maintenance between 2022-06-13 04:00:00 UTC and 2022-06-13 06:00:00 UTC. During this time, the instances associated with this event in the us-east-1 region will be unavailable and rebooted.\\n\\nAt any time before 2022-06-13 04:00:00 UTC, you can reschedule this maintenance or stop and start the instance through the AWS API, AWS CLI, or AWS Management Console. When rescheduling, you can pick any time up to 2022-06-27 07:00:00 UTC, at which EC2 will perform maintenance on the instance. Otherwise, you can wait for EC2 to reboot your instance during the scheduled maintenance window. For more details on how to reschedule this event as well as other alternatives to complete this maintenance see the EC2 user guide https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-instances-status-check_sched.html#reschedule-event\\n\\nYou can find more information about maintenance events scheduled for your EC2 instances in the AWS Management Console https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Events\\n\\n* What will happen to my instance during this maintenance event?\\n\\nDuring maintenance the instance will be rebooted. The reboot generally takes a few minutes to complete. After the reboot, your instance retains its IP address, DNS name, and any data on local instance-store volumes.\\n\\n* What will happen when I stop and start the instance?\\n\\nYou can stop and start the instance at any time before the scheduled maintenance window. This will migrate the instance to a new host and the instance will not have to undergo the scheduled maintenance. Please note that the data on any local instance-store volumes will not be preserved when you stop and start your instance. For more information about stopping and starting your instance see the EC2 User Guide https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Stop_Start.html.\\n\\n* Why does my instance require maintenance?\\n\\nEC2 routinely performs maintenance on the underlying systems in order to strengthen the security, reliability and operational performance of the EC2 service for our customers. Additional information about maintenance events can be found at https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-instances-status-check_sched.html.\\n\\n\\n\\nIf you have any questions or concerns, you can contact the AWS Support Team on the community forums and via AWS Premium Support at: https://aws.amazon.com/support."
+      }
+    ],
+    "eventTypeCategory": "scheduledChange",
+    "eventTypeCode": "AWS_EC2_INSTANCE_REBOOT_FLEXIBLE_MAINTENANCE_SCHEDULED",
+    "service": "EC2",
+    "startTime": "Mon, 13 Jun 2022 04:00:00 GMT"
+  },
+  "detail-type": "AWS Health Event",
+  "id": "e2f91a6c-9aa6-8975-e01d-98f97bcfe836",
+  "region": "us-east-1",
+  "replay-name": "replay1",
+  "resources": [
+    "i-073e34cc1e957d7ec"
+  ],
+  "source": "aws.health",
+  "time": "2022-05-27T07:47:33Z",
+  "version": "0"
+},
+{
+  "account": "478983378254",
+  "detail": {
+    "affectedEntities": [
+      {
+        "entityValue": "i-056514be914b8a41d"
+      }
+    ],
+    "endTime": "Wed, 15 Jun 2022 12:00:00 GMT",
+    "eventArn": "arn:aws:health:us-east-1::event/EC2/AWS_EC2_INSTANCE_REBOOT_FLEXIBLE_MAINTENANCE_SCHEDULED/AWS_EC2_INSTANCE_REBOOT_FLEXIBLE_MAINTENANCE_SCHEDULED_9fb2790d-743f-4b59-982e-7b4ac5bc6f09",
+    "eventDescription": [
+      {
+        "language": "en_US",
+        "latestDescription": "One or more of your Amazon EC2 instances are scheduled for maintenance between 2022-06-15 10:00:00 UTC and 2022-06-15 12:00:00 UTC. During this time, the instances associated with this event in the us-east-1 region will be unavailable and rebooted.\\n\\nAt any time before 2022-06-15 10:00:00 UTC, you can reschedule this maintenance or stop and start the instance through the AWS API, AWS CLI, or AWS Management Console. When rescheduling, you can pick any time up to 2022-07-01 10:00:00 UTC, at which EC2 will perform maintenance on the instance. Otherwise, you can wait for EC2 to reboot your instance during the scheduled maintenance window. For more details on how to reschedule this event as well as other alternatives to complete this maintenance see the EC2 user guide https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-instances-status-check_sched.html#reschedule-event\\n\\nYou can find more information about maintenance events scheduled for your EC2 instances in the AWS Management Console https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Events\\n\\n* What will happen to my instance during this maintenance event?\\n\\nDuring maintenance the instance will be rebooted. The reboot generally takes a few minutes to complete. After the reboot, your instance retains its IP address, DNS name, and any data on local instance-store volumes.\\n\\n* What will happen when I stop and start the instance?\\n\\nYou can stop and start the instance at any time before the scheduled maintenance window. This will migrate the instance to a new host and the instance will not have to undergo the scheduled maintenance. Please note that the data on any local instance-store volumes will not be preserved when you stop and start your instance. For more information about stopping and starting your instance see the EC2 User Guide https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Stop_Start.html.\\n\\n* Why does my instance require maintenance?\\n\\nEC2 routinely performs maintenance on the underlying systems in order to strengthen the security, reliability and operational performance of the EC2 service for our customers. Additional information about maintenance events can be found at https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-instances-status-check_sched.html.\\n\\n\\n\\nIf you have any questions or concerns, you can contact the AWS Support Team on the community forums and via AWS Premium Support at: https://aws.amazon.com/support."
+      }
+    ],
+    "eventTypeCategory": "scheduledChange",
+    "eventTypeCode": "AWS_EC2_INSTANCE_REBOOT_FLEXIBLE_MAINTENANCE_SCHEDULED",
+    "service": "EC2",
+    "startTime": "Wed, 15 Jun 2022 10:00:00 GMT"
+  },
+  "detail-type": "AWS Health Event",
+  "id": "04c153c8-4e54-0380-abe9-51a04d08fd20",
+  "region": "us-east-1",
+  "replay-name": "replay1",
+  "resources": [
+    "i-056514be914b8a41d"
+  ],
+  "source": "aws.health",
+  "time": "2022-05-31T10:00:50Z",
+  "version": "0"
+},
+{
+  "account": "478983378254",
+  "detail": {
+    "affectedEntities": [
+      {
+        "entityValue": "i-09b6061138481a26b"
+      }
+    ],
+    "eventArn": "arn:aws:health:us-east-1::event/EC2/AWS_EC2_INSTANCE_AVAILABILITY_ISSUE/AWS_EC2_INSTANCE_AVAILABILITY_ISSUE_0830aae8-3edd-4885-a202-4932d2461e0f",
+    "eventDescription": [
+      {
+        "language": "en_US",
+        "latestDescription": "We are investigating an issue that impacts the availability of some EC2 instances in the us-east-1 region. Your affected EC2 instances are listed in the “Affected resources” Tab.\\n\\nIf your EC2 instance(s) is part of an EC2 Auto Scaling group, or has EC2 Auto Recovery enabled, you do not need to do anything. Your EC2 instance(s) will automatically be recovered. Otherwise, if you do not want to wait for EC2 to fix the issue, you can perform a stop/start or replace the instance. See:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Stop_Start.html\\n\\nTo avoid single points of failure within critical applications, please refer to our architecture center for more information on implementing fault-tolerant architectures: https://aws.amazon.com/architecture\\n\\nIf you have any questions or concerns, you can contact the AWS Support Team on the community forums and via AWS Premium Support at: https://aws.amazon.com/support"
+      }
+    ],
+    "eventTypeCategory": "issue",
+    "eventTypeCode": "AWS_EC2_INSTANCE_AVAILABILITY_ISSUE",
+    "service": "EC2",
+    "startTime": "Thu, 2 Jun 2022 00:02:24 GMT"
+  },
+  "detail-type": "AWS Health Event",
+  "id": "175df98f-361f-f274-c6b1-fd87288c5942",
+  "region": "us-east-1",
+  "replay-name": "replay1",
+  "resources": [
+    "i-09b6061138481a26b"
+  ],
+  "source": "aws.health",
+  "time": "2022-06-02T00:02:24Z",
+  "version": "0"
+},
+{
+  "account": "478983378254",
+  "detail": {
+    "affectedEntities": [
+      {
+        "entityValue": "vpn-0171313c6944e5983"
+      }
+    ],
+    "eventArn": "arn:aws:health:us-east-1::event/VPN/AWS_VPN_REDUNDANCY_LOSS/AWS_VPN_REDUNDANCY_LOSS-1654068974856-4555645-IAD",
+    "eventDescription": [
+      {
+        "language": "en_US",
+        "latestDescription": "Your VPN Connection vpn-0171313c6944e5983 in the us-east-1 Region had a momentary lapse of redundancy as one of two tunnel endpoints was replaced. Connectivity on the second tunnel was not affected during this time. Both tunnels are now operating normally.\\n\\nReplacements can occur for several reasons, including health, software upgrades, customer-initiated modifications, and when underlying hardware is retired. If you have configured your VPN Customer Gateway to use both tunnels, then your VPN Connection will have utilized the alternate tunnel during the replacement process. For more on tunnel endpoint replacements, please see our documentation (1).\\n\\nIf you have not configured your VPN Customer Gateway to use both tunnels, then your VPN Connection may have been interrupted during the replacement. We encourage you to configure your router to use both tunnels. You can obtain the VPN Connection configuration recommendations for several types of VPN devices from the AWS Management Console (2). On the \\\"Amazon VPC\\\" tab, select \\\"VPN Connections\\\". Then highlight the VPN Connection and choose \\\"Download Configuration\\\".\\n\\n\\n(1) https://docs.aws.amazon.com/vpn/latest/s2svpn/monitoring-vpn-health-events.html\\n(2) https://console.aws.amazon.com"
+      }
+    ],
+    "eventTypeCategory": "accountNotification",
+    "eventTypeCode": "AWS_VPN_REDUNDANCY_LOSS",
+    "service": "VPN",
+    "startTime": "Wed, 1 Jun 2022 07:28:38 GMT"
+  },
+  "detail-type": "AWS Health Event",
+  "id": "0420dcef-9a4c-5aff-9ae6-f4936ad10407",
+  "region": "us-east-1",
+  "replay-name": "replay1",
+  "resources": [
+    "vpn-0171313c6944e5983"
+  ],
+  "source": "aws.health",
+  "time": "2022-06-01T07:28:38Z",
+  "version": "0"
+},
+{
+  "account": "478983378254",
+  "detail": {
+    "affectedEntities": [
+      {
+        "entityValue": "i-0449d6114ff390660"
+      }
+    ],
+    "endTime": "Mon, 27 Jun 2022 08:00:00 GMT",
+    "eventArn": "arn:aws:health:us-east-1::event/EC2/AWS_EC2_PERSISTENT_INSTANCE_RETIREMENT_SCHEDULED/AWS_EC2_PERSISTENT_INSTANCE_RETIREMENT_SCHEDULED_ba857c62-ba60-43b2-acaa-686d77cf9e2b",
+    "eventDescription": [
+      {
+        "language": "en_US",
+        "latestDescription": "EC2 has detected degradation of the underlying hardware hosting your Amazon EC2 instance associated with this event in the us-east-1 region. Due to this degradation your instance could already be unreachable. We will stop your instance after 2022-06-27 08:00:00 UTC. Please take appropriate action before this time.\\n\\nYou can find more information about retirement events scheduled for your EC2 instances in the AWS Management Console https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Events\\n\\n* What will happen to my instance?\\nYour instance will be stopped after the specified retirement date. You can start it again at any time after it’s stopped. Any data on local instance-store volumes will be lost when the instance is stopped or terminated.\\n\\n* What do I need to do?\\nWe recommend that you stop and start the instance which will migrate the instance to a new host. Please note that any data on your local instance-store volumes will not be preserved when you stop and start your instance. For more information about stopping and starting your instance, and what to expect when your instance is stopped, such as the effect on public, private and Elastic IP addresses associated with your instance, see Stop and Start Your Instance in the EC2 User Guide (https://docs.aws.amazon.com/en_us/AWSEC2/latest/UserGuide/Stop_Start.html). However, if you do not need this instance, you can stop it at any time yourself or wait for EC2 to stop it after the retirement date.\\n\\n* Why is EC2 retiring my instance?\\nEC2 may schedule instances for retirement in cases where there is an unrecoverable issue with the underlying hardware. For more information about scheduled retirement events please see the EC2 user guide (https://docs.aws.amazon.com/en_us/AWSEC2/latest/UserGuide/instance-retirement.html). \\n\\nIf you have questions or issues, contact AWS Support at: https://aws.amazon.com/support ."
+      }
+    ],
+    "eventTypeCategory": "scheduledChange",
+    "eventTypeCode": "AWS_EC2_PERSISTENT_INSTANCE_RETIREMENT_SCHEDULED",
+    "service": "EC2",
+    "startTime": "Mon, 27 Jun 2022 08:00:00 GMT"
+  },
+  "detail-type": "AWS Health Event",
+  "id": "094106de-7cdb-5d77-a03c-185ccb7d5154",
+  "region": "us-east-1",
+  "replay-name": "replay1",
+  "resources": [
+    "i-0449d6114ff390660"
+  ],
+  "source": "aws.health",
+  "time": "2022-06-04T02:08:04Z",
+  "version": "0"
+},
+{
+  "account": "478983378254",
+  "detail": {
+    "affectedEntities": [
+      {
+        "entityValue": "arn:aws:shield::478983378254:root/MonthlySubscription"
+      }
+    ],
+    "eventArn": "arn:aws:health:us-east-1::event/SHIELD/AWS_SHIELD_WELCOME_TO_ADVANCED/AWS_SHIELD_WELCOME_TO_ADVANCED_bf5b94c9638a7c5114138ebfc3a618bf0bd0e7efb2cc1b1e5f510c2a7b9044d9",
+    "eventDescription": [
+      {
+        "language": "en_US",
+        "latestDescription": "You are receiving this notification because AWS Shield Advanced was enabled on your account and we'd like to help you get started.\\n\\nPlease refer to the email sent to the root email address and the Named Operations Contact of your account for more details."
+      }
+    ],
+    "eventTypeCategory": "accountNotification",
+    "eventTypeCode": "AWS_SHIELD_WELCOME_TO_ADVANCED",
+    "service": "SHIELD",
+    "startTime": "Thu, 2 Jun 2022 02:00:44 GMT"
+  },
+  "detail-type": "AWS Health Event",
+  "id": "15034e4b-7452-5a35-3067-5cdf9f80e088",
+  "region": "us-east-1",
+  "replay-name": "replay1",
+  "resources": [
+    "arn:aws:shield::478983378254:root/MonthlySubscription"
+  ],
+  "source": "aws.health",
+  "time": "2022-06-02T02:00:44Z",
+  "version": "0"
+},
+{
+  "account": "478983378254",
+  "detail": {
+    "affectedEntities": [
+      {
+        "entityValue": "i-09b6061138481a26b"
+      }
+    ],
+    "endTime": "Thu, 2 Jun 2022 00:29:18 GMT",
+    "eventArn": "arn:aws:health:us-east-1::event/EC2/AWS_EC2_INSTANCE_AVAILABILITY_ISSUE/AWS_EC2_INSTANCE_AVAILABILITY_ISSUE_0830aae8-3edd-4885-a202-4932d2461e0f",
+    "eventDescription": [
+      {
+        "language": "en_US",
+        "latestDescription": "Between Thu, 2 Jun 2022 00:02:24 GMT and Thu, 2 Jun 2022 00:29:18 GMT, a small number of EC2 instances were unavailable in the us-east-1 region. Your affected EC2 instance(s) are listed in the “Affected resources” Tab. The issue has been resolved and the service is operating normally.\\n\\nTo avoid single points of failure within critical applications, please refer to our architecture center for more information on implementing fault-tolerant architectures: https://aws.amazon.com/architecture\\n\\nIf you have any questions or concerns, you can contact the AWS Support Team on the community forums and via AWS Premium Support at: https://aws.amazon.com/support"
+      }
+    ],
+    "eventTypeCategory": "issue",
+    "eventTypeCode": "AWS_EC2_INSTANCE_AVAILABILITY_ISSUE",
+    "service": "EC2",
+    "startTime": "Thu, 2 Jun 2022 00:02:24 GMT"
+  },
+  "detail-type": "AWS Health Event",
+  "id": "98239df5-9c6f-5869-a0f0-5bf2454049d7",
+  "region": "us-east-1",
+  "replay-name": "replay1",
+  "resources": [
+    "i-09b6061138481a26b"
+  ],
+  "source": "aws.health",
+  "time": "2022-06-02T00:02:24Z",
+  "version": "0"
+},
+{
+  "account": "478983378254",
+  "detail": {
+    "affectedEntities": [
+      {
+        "entityValue": "i-0f54edcd70964d001"
+      }
+    ],
+    "eventArn": "arn:aws:health:us-east-1::event/EC2/AWS_EC2_INSTANCE_AUTO_RECOVERY_SUCCESS/AWS_EC2_INSTANCE_AUTO_RECOVERY_SUCCESS88fab79b-8015-42c3-a9ad-a6a35f80a331",
+    "eventDescription": [
+      {
+        "language": "en_US",
+        "latestDescription": "One of your EC2 instances in the us-east-1 region has failed a System status check and the instance was successfully recovered by EC2 Auto Recovery.\\n\\nYour instance is running and reporting healthy. If you have startup procedures that aren't automated during your instance boot process, please remember that you need to log in and run them.\\n\\nYou can learn more about EC2 Auto Recovery here: http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-recover.html\\n\\nIf you have any questions or concerns, you can contact the AWS Support Team on the community forums and via AWS Premium Support at: http://aws.amazon.com/support"
+      }
+    ],
+    "eventTypeCategory": "accountNotification",
+    "eventTypeCode": "AWS_EC2_INSTANCE_AUTO_RECOVERY_SUCCESS",
+    "service": "EC2",
+    "startTime": "Fri, 3 Jun 2022 12:34:01 GMT"
+  },
+  "detail-type": "AWS Health Event",
+  "id": "6d827117-5fb5-4a73-95df-bcea36ee2ded",
+  "region": "us-east-1",
+  "replay-name": "replay1",
+  "resources": [
+    "i-0f54edcd70964d001"
+  ],
+  "source": "aws.health",
+  "time": "2022-06-03T12:34:01Z",
+  "version": "0"
+},
+{
+  "account": "478983378254",
+  "detail": {
+    "affectedEntities": [
+      {
+        "entityValue": "i-0d0e1cc1622ea8607"
+      }
+    ],
+    "endTime": "Wed, 29 Jun 2022 06:00:00 GMT",
+    "eventArn": "arn:aws:health:us-east-1::event/EC2/AWS_EC2_INSTANCE_STOP_SCHEDULED/AWS_EC2_INSTANCE_STOP_SCHEDULED_07531e9a-7b13-49ae-962a-ebc758a705e3",
+    "eventDescription": [
+      {
+        "language": "en_US",
+        "latestDescription": "One or more of your Amazon EC2 instances are scheduled for maintenance that requires your instances to be retired on 2022-06-29. The instances associated with this event in the us-east-1 region will be stopped after 2022-06-29 06:00:00 UTC.\\n\\nAt any time before 2022-06-29 06:00:00 UTC, you can reschedule this maintenance or stop and start the instance through the AWS API, AWS CLI, or AWS Management Console. When rescheduling, you can pick any time up to 2022-07-13 00:00:00 UTC, at which EC2 will perform maintenance on the instance. Otherwise, you can wait for EC2 to stop your instance during the scheduled maintenance window. For more details on how to reschedule this event as well as other alternatives to complete this maintenance see the EC2 user guide https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-instances-status-check_sched.html#reschedule-event\\n\\nYou can find more information about maintenance events scheduled for your EC2 instances in the AWS Management Console https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Events\\n\\n* What will happen to my instance during this maintenance event?\\n\\nYour instance will be stopped after the specified retirement date. You can start it again at any time after it’s stopped. Any data on local instance-store volumes will be lost when the instance is stopped or terminated.\\n\\n* What do I need to do?\\n\\nWe recommend that you stop and start the instance at any time before the retirement date. This will migrate the instance to a new host and the instance will not be stopped. Please note that any data on local instance-store volumes will not be preserved when you stop and start your instance. For more information about stopping and starting your instance, and what to expect when your instance is stopped, such as the effect on public, private and Elastic IP addresses associated with your instance, see Stop and Start Your Instance in the EC2 User Guide https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Stop_Start.html. \\n\\n* Why does my instance require maintenance?\\n\\nEC2 routinely performs maintenance on the underlying systems in order to strengthen the security, reliability and operational performance of the EC2 service for our customers. Additional information about maintenance events can be found at https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-instances-status-check_sched.html#schedevents_actions_retire.\\n\\n\\n\\nIf you have any questions or concerns, you can contact the AWS Support Team on the community forums and via AWS Premium Support at: https://aws.amazon.com/support ."
+      }
+    ],
+    "eventTypeCategory": "scheduledChange",
+    "eventTypeCode": "AWS_EC2_INSTANCE_STOP_SCHEDULED",
+    "service": "EC2",
+    "startTime": "Wed, 29 Jun 2022 06:00:00 GMT"
+  },
+  "detail-type": "AWS Health Event",
+  "id": "05a5b460-61e8-64d9-d2ec-ab2dfa2cd000",
+  "region": "us-east-1",
+  "replay-name": "replay1",
+  "resources": [
+    "i-0d0e1cc1622ea8607"
+  ],
+  "source": "aws.health",
+  "time": "2022-06-05T15:08:18Z",
+  "version": "0"
+},
+{
+  "account": "478983378254",
+  "detail": {
+    "affectedEntities": [
+      {
+        "entityValue": "i-0d73cd40a87329206"
+      }
+    ],
+    "endTime": "Wed, 22 Jun 2022 00:00:00 GMT",
+    "eventArn": "arn:aws:health:us-east-1::event/EC2/AWS_EC2_PERSISTENT_INSTANCE_RETIREMENT_SCHEDULED/AWS_EC2_PERSISTENT_INSTANCE_RETIREMENT_SCHEDULED_09b3953e-48e2-4887-a875-dd28d4dffe12",
+    "eventDescription": [
+      {
+        "language": "en_US",
+        "latestDescription": "EC2 has detected degradation of the underlying hardware hosting your Amazon EC2 instance associated with this event in the us-east-1 region. Due to this degradation your instance could already be unreachable. We will stop your instance after 2022-06-22 00:00:00 UTC. Please take appropriate action before this time.\\n\\nYou can find more information about retirement events scheduled for your EC2 instances in the AWS Management Console https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Events\\n\\n* What will happen to my instance?\\nYour instance will be stopped after the specified retirement date. You can start it again at any time after it’s stopped. Any data on local instance-store volumes will be lost when the instance is stopped or terminated.\\n\\n* What do I need to do?\\nWe recommend that you stop and start the instance which will migrate the instance to a new host. Please note that any data on your local instance-store volumes will not be preserved when you stop and start your instance. For more information about stopping and starting your instance, and what to expect when your instance is stopped, such as the effect on public, private and Elastic IP addresses associated with your instance, see Stop and Start Your Instance in the EC2 User Guide (https://docs.aws.amazon.com/en_us/AWSEC2/latest/UserGuide/Stop_Start.html). However, if you do not need this instance, you can stop it at any time yourself or wait for EC2 to stop it after the retirement date.\\n\\n* Why is EC2 retiring my instance?\\nEC2 may schedule instances for retirement in cases where there is an unrecoverable issue with the underlying hardware. For more information about scheduled retirement events please see the EC2 user guide (https://docs.aws.amazon.com/en_us/AWSEC2/latest/UserGuide/instance-retirement.html). \\n\\nIf you have questions or issues, contact AWS Support at: https://aws.amazon.com/support ."
+      }
+    ],
+    "eventTypeCategory": "scheduledChange",
+    "eventTypeCode": "AWS_EC2_PERSISTENT_INSTANCE_RETIREMENT_SCHEDULED",
+    "service": "EC2",
+    "startTime": "Wed, 22 Jun 2022 00:00:00 GMT"
+  },
+  "detail-type": "AWS Health Event",
+  "id": "c8236f94-5383-dd63-8038-a827878d40fd",
+  "region": "us-east-1",
+  "replay-name": "replay1",
+  "resources": [
+    "i-0d73cd40a87329206"
+  ],
+  "source": "aws.health",
+  "time": "2022-05-30T19:44:03Z",
+  "version": "0"
+},
+{
+  "account": "478983378254",
+  "detail": {
+    "affectedEntities": [
+      {
+        "entityValue": "i-09b6061138481a26b"
+      }
+    ],
+    "eventArn": "arn:aws:health:us-east-1::event/EC2/AWS_EC2_INSTANCE_AUTO_RECOVERY_NO_ACTION/AWS_EC2_INSTANCE_AUTO_RECOVERY_NO_ACTION2a190119-f8ac-4b86-807b-02e5fae1d3d1",
+    "eventDescription": [
+      {
+        "language": "en_US",
+        "latestDescription": "An Auto Recovery action was triggered for your EC2 instances in the us-east-1 region, but no action was taken.\\n\\n* Why was no action taken?\\n\\nEC2 Auto Recovery re-verifies the system health status of an instance before proceeding.  During this verification step your instance reported healthy and recovery was therefore not initiated.\\n\\nCommon reasons for this include:\\n1.  A system health check failure was very short-lived and recovered by the time Auto Recovery was initiated\\n2.  A user performed a manual override of the CloudWatch alarm by setting the alarm state to ALARM\\n\\n* What do you need to do?\\n\\nYour instance is running and reporting healthy. You do not need to take any action at this time.\\n\\nYou can learn more about EC2 Auto Recovery here: http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-recover.html\\n\\nIf you have any questions or concerns, you can contact the AWS Support Team on the community forums and via AWS Premium Support at: http://aws.amazon.com/support"
+      }
+    ],
+    "eventTypeCategory": "accountNotification",
+    "eventTypeCode": "AWS_EC2_INSTANCE_AUTO_RECOVERY_NO_ACTION",
+    "service": "EC2",
+    "startTime": "Thu, 2 Jun 2022 00:02:38 GMT"
+  },
+  "detail-type": "AWS Health Event",
+  "id": "315e65df-2169-3976-096c-33f4672a076b",
+  "region": "us-east-1",
+  "replay-name": "replay1",
+  "resources": [
+    "i-09b6061138481a26b"
+  ],
+  "source": "aws.health",
+  "time": "2022-06-02T00:02:38Z",
+  "version": "0"
+},
+{
+  "account": "478983378254",
+  "detail": {
+    "affectedEntities": [
+      {
+        "entityValue": "vpn-0171313c6944e5983"
+      }
+    ],
+    "eventArn": "arn:aws:health:us-east-1::event/VPN/AWS_VPN_REDUNDANCY_LOSS/AWS_VPN_REDUNDANCY_LOSS-1654518031801-4555646-IAD",
+    "eventDescription": [
+      {
+        "language": "en_US",
+        "latestDescription": "Your VPN Connection vpn-0171313c6944e5983 in the us-east-1 Region had a momentary lapse of redundancy as one of two tunnel endpoints was replaced. Connectivity on the second tunnel was not affected during this time. Both tunnels are now operating normally.\\n\\nReplacements can occur for several reasons, including health, software upgrades, customer-initiated modifications, and when underlying hardware is retired. If you have configured your VPN Customer Gateway to use both tunnels, then your VPN Connection will have utilized the alternate tunnel during the replacement process. For more on tunnel endpoint replacements, please see our documentation (1).\\n\\nIf you have not configured your VPN Customer Gateway to use both tunnels, then your VPN Connection may have been interrupted during the replacement. We encourage you to configure your router to use both tunnels. You can obtain the VPN Connection configuration recommendations for several types of VPN devices from the AWS Management Console (2). On the \\\"Amazon VPC\\\" tab, select \\\"VPN Connections\\\". Then highlight the VPN Connection and choose \\\"Download Configuration\\\".\\n\\n\\n(1) https://docs.aws.amazon.com/vpn/latest/s2svpn/monitoring-vpn-health-events.html\\n(2) https://console.aws.amazon.com"
+      }
+    ],
+    "eventTypeCategory": "accountNotification",
+    "eventTypeCode": "AWS_VPN_REDUNDANCY_LOSS",
+    "service": "VPN",
+    "startTime": "Mon, 6 Jun 2022 12:17:56 GMT"
+  },
+  "detail-type": "AWS Health Event",
+  "id": "a94f52da-d3c9-e3a6-ddf7-f7c426a3d151",
+  "region": "us-east-1",
+  "replay-name": "replay1",
+  "resources": [
+    "vpn-0171313c6944e5983"
+  ],
+  "source": "aws.health",
+  "time": "2022-06-06T12:17:56Z",
+  "version": "0"
+}]
