@@ -1,4 +1,4 @@
-export DT_API_URL=https://izs31363.dev.dynatracelabs.com
+export DT_API_URL=https://XXX.dev.dynatracelabs.com
 export DT_API_TOKEN=dt0c01.XXXXX
 export AWS_EVENTBRIDGE_BUS=default
 export AWS_EVENTBRIDGE_RULE_PATTERN=X-aws.health
