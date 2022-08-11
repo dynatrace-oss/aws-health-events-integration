@@ -84,7 +84,7 @@ async function sendToDynatrace(dtEvent) {
         throw new Error(`error occured while interacting with DT, ${e.message}`)
     }
 
-    if (ret.status < 200 && ret.status > 299) {
+    if (ret.status < 200 || ret.status > 299) {
         throw new Error(`DT returned unexpected status code ${ret.status}/${ret?.request?.res?.statusMessage}`)
     }
 
