@@ -1,21 +1,22 @@
 {
   "name": "awshealth2dynatrace",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Forward account-specific AWS Health Events (available through AWS EventBridge) to Dynatrace",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
     "lint-with-fix": "eslint **/**.js --fix",
     "prepare-for-dev": "npm install",
-    "package-for-production": "rm -rf app.zip node_modules && npm install --production && zip app.zip -r *.js node_modules" 
+    "package-for-production": "rm -rf app.zip node_modules && npm install --production && zip app.zip -r *.js node_modules"
   },
   "author": "Michael Stephan",
   "license": "ISC",
   "dependencies": {
-    "liquidjs": "^9.36.0",
+    "aws-sdk": "^2.1107.0",
+    "axios": "^0.27.2",
     "flat": "^5.0.2",
-    "axios":"^0.27.2",
-    "aws-sdk":"^2.1107.0"
+    "lib.cli": "^5.4.0",
+    "liquidjs": "^9.36.0"
   },
   "devDependencies": {
     "eslint": "^7.32.0",

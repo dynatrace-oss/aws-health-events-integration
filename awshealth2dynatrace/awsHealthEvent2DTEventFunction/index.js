@@ -12,6 +12,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+const PACKAGE_JSON = require('./package.json'); 
+
 const transformer = require('./transformer.js')
 const axios = require('axios').default;
 const fs = require('fs')
@@ -77,7 +79,8 @@ async function sendToDynatrace(dtEvent) {
         ret = await axios.post(`${DT_API_URL}/api/v2/events/ingest`, JSON.stringify(dtEvent), {
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': `Api-Token ${DT_API_TOKEN}`
+                'Authorization': `Api-Token ${DT_API_TOKEN}`,
+                'User-Agent': `awshealth2dynatrace/${PACKAGE_JSON.version}`
             }
         })
     } catch (e) {
